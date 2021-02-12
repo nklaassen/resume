@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Nic Klaassen - Resume</title>
+   <style>
+		@page {
+			size: 8.5in 11in;
+			margin: 0;
+			padding: 0;
+		}
+      html, body {
+         margin: 0;
+         padding: 0;
+      }
+		body {
+			background-color: #eeeeee;
+		}
+		.paper {
+			margin: 0;
+			padding: 0.5in;
+			width: 8.5in;
+			height: 11in;
+			box-sizing: border-box;
+			background-color: white;
+		}
+      @media not print {
+         .paper {
+				margin: 0.5in auto;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+         }
+      }
+      h1, h2 {
+         border-bottom: 1.5pt solid black;
+         margin-bottom: 8pt;
+			margin-top: 0;
+      }
+      p, a {
+         margin: 0;
+         padding: 0;
+         font-size: 12pt;
+      }
+		li {
+			margin-bottom: 2pt;
+		}
+		header {
+			margin-bottom: 8pt;
+		}
+      .flex-row {
+         display: flex;
+      }
+		.flex-row > * {
+			flex: 1;
+		}
+      .item-header {
+         border-left: 1pt solid black;
+         padding: 2pt 4pt;
+      }
+      .item-header h3 {
+         margin: 0;
+      }
+      .item-header-right {
+         text-align: right;
+      }
+		.item-body {
+			margin-bottom: 8pt;
+		}
+		.item-body ul {
+			margin: 4pt 0;
+			padding: 0 16pt;
+		}
+		.left-side {
+			margin-right: 6pt;
+		}
+		.right-side {
+			margin-left: 6pt;
+		}
+		.left-side .item-header {
+			margin-bottom: 6pt;
+		}
+   </style>
+</head>
+<body>
+
+   <div class="paper">
+      <header>
+         <h1 style="text-align: center">Nic Klaassen</h1>
+         <div class="flex-row">
+            <p>4950 Coleman Place<br>Delta, BC V4K3H7</p>
+            <a href="https://nicklaassen.ca" style="text-align: center">nicklaassen.ca</a>
+            <p style="text-align: right">nic@nicklaassen.ca<br>778-871-4315</p>
+         </div>
+      </header>
+      <section>
+         <h2>Work Experience</h2>
+
+         <div class="item-header flex-row">
+            <div>
+               <h3>Software Engineer</h3>
+               <p>September 2019 - Present</p>
+            </div>
+            <div class="item-header-right">
+               <h3>Arista Networks</h3>
+               <p>Burnaby, BC</p>
+            </div>
+         </div>
+         <div class="item-body">
+				<ul>
+               <li>Developed process orchestration software in C++ and Python to manage
+						highly reliable network switches</li>
+					<li>Designed and implemented a method for sharing state between
+						redundant ASIC management processes</li>
+					<li>Created new commands for Arista's console CLI and JSON eAPI
+						to enable new features and products</li>
+               <li>Wrote comprehensive unit and integration tests to verify new
+                  features and solidify bug fixes</li>
+            </ul>
+         </div>
+
+         <div class="item-header flex-row">
+            <div>
+               <h3>Co-op Instrumentation Engineer</h3>
+               <p>May 2015 - Dec 2018 (Intermittent)</p>
+            </div>
+            <div class="item-header-right">
+               <h3>Precision NanoSystems Inc.</h3>
+               <p>Vancouver, BC</p>
+            </div>
+         </div>
+         <div class="item-body">
+				<ul>
+               <li>Prototyped a low-waste continuous flow fluid pumping system using reciprocating OEM syringe pumps</li>
+					<li>Designed and implemented an RFID system used in PNI's suite of microfluidic devices</li>
+               <li>Created a transponder memory specification with built-in error detection to store device information</li>
+               <li>Co-invented US Patent 20200023358 – “Smart Microfuidic Mixing Instrument and Cartridges”</li>
+					<li>Collected and presented experimental data with Arduino, Python and R to inform engineering and business decisions</li>
+            </ul>
+         </div>
+
+         <div class="item-header flex-row">
+            <div>
+               <h3>Embedded Software Developer, Co-op</h3>
+               <p>September 2017 - April 2018</p>
+            </div>
+            <div class="item-header-right">
+               <h3>Avigilon</h3>
+               <p>Vancouver, BC</p>
+            </div>
+         </div>
+         <div class="item-body">
+				<ul>
+					<li>Created a new method for streaming live video from cameras and NVRs to a video analytics appliance</li>
+					<li>Developed a factory reset solution for a new product, driving implementation from bootloader to web UI</li>
+					<li>Configured a custom Linux-based image built with Yocto and OpenEmbedded to bring 3 new devices from their first boot to their official launch</li>
+            </ul>
+         </div>
+
+      </section>
+		<section class="flex-row">
+			<div class="left-side">
+				<h2>Projects</h2>
+				<div class="item-header">
+					<h3>Mousetrap</h3>
+					<p>Use your phone as a wireless trackpad and keyboard</p>
+				</div>
+				<div class="item-header">
+					<h3>Sudoku Solver</h3>
+					<p>A fast bitvector-based sudoku solver written in C</p>
+				</div>
+				<div class="item-header">
+					<h3>Local MapReduce</h3>
+					<p>Leverage OpenMP to distribute tasks across CPUs</p>
+				</div>
+			</div>
+			<div class="right-side">
+				<h2>Languages and Tools</h2>
+				<p style="margin-top: 8pt">
+					C++, C, Python, Go, Bash, Javascript,
+					React, HTML, CSS, AWS, Git, Mercurial, Perforce, Arduino,
+					Raspberry Pi, ESP32, FreeRTOS, Linux, Vim
+				</p>
+				<h2 style="margin-top: 4pt">Skills</h2>
+				<p style="margin-top: 8pt">
+					Embedded software development, web development, networking, linux,
+					full-stack software, data analysis, systems design
+				</p>
+			</div>
+		</section>
+		<section>
+			<h2>Education</h2>
+         <div class="item-header flex-row">
+            <div>
+               <h3>Bachelor of Applied Science</h3>
+               <p>Computer Engineering</p>
+            </div>
+            <div class="item-header-right">
+               <h3>Simon Fraser University</h3>
+               <p>Burnaby, BC</p>
+            </div>
+         </div>
+			<div class="item-body">
+				<ul>
+					<li>Lead sensor fusion and embedded software developer for our "Smart Knee Brace" capstone project</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
